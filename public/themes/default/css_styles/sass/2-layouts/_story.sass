@@ -1,0 +1,58 @@
+
+//story sass
+
+.story-image
+    border-radius: 50%
+    height: 250px
+    width: 250px
+
+.story-title
+    color: $blue
+
+.story-title::before
+    +circleBefore('',inline-block,10px,10px,7.5px,$yellow,8px)
+
+
+.story-content
+    color: $dark-gray
+
+@media (min-width: 992px)
+    .story-imgdiv
+        text-align: left
+
+
+@media (max-width: 991px)
+    .story-imgdiv
+        text-align: center
+        padding-bottom: 20px
+
+
+.divid-sm
+    padding-top: 8px
+    padding-bottom: 8px
+
+#last-course
+    border-right: 1px solid darkgray
+
+.last-title
+    color: $blue !important
+
+.last-title::before
+    margin-right: 10px
+    +circleBefore('',inline-block,10px,10px,7.5px,$yellow,8px)
+
+.side-title
+    color: $dark-gray
+    border: 1px solid $green
+    padding: 8px
+
+.news-date
+    color: $dark-gray
+    padding-right: 17px
+
+.story-details-title
+    color: $blue
+    padding-right: 17px
+
+.story-details-title::before
+    +circleBefore('',inline-block,10px,10px,7.5px,$yellow,8px)

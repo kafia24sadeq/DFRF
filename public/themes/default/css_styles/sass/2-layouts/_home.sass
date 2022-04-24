@@ -1,0 +1,602 @@
+@import "common"
+@import "../variables"
+.social
+    width: 99px
+    height: 400px
+    justify-content: center
+    align-items: center
+    //border-left: 1px solid $green
+
+    > .nav-item
+        padding-top: 8px
+
+.navbar-nav > li
+    float: left
+    position: relative
+
+.navbar-nav.main.flex-column
+    border-right: 1px solid $green
+
+.header-div
+    padding: 55px
+    border-right: 1px solid lightgray
+
+.header-title
+    text-align: center
+    font-family: AlfFont sans-serif !important
+    color: $dark-gray
+
+@media (min-width: 426px)
+    .doc-all-container
+        margin-bottom: 20px
+        position: absolute
+        bottom: -85px
+        right: 38px
+
+@media (max-width: 425px)
+    .doc-all-container
+        margin-bottom: 20px
+        position: absolute
+        bottom: -85px
+        right: 38px
+
+.nav-link
+    font-family: 'AlfFont' !important
+
+
+.nav-col
+    padding-left: unset !important
+
+.carousel-col
+    padding-right: unset !important
+
+.carousel-indicators li
+    width: 14px !important
+    height: 4px !important
+    background-clip: unset !important
+    border-bottom: unset !important
+    border-radius: 50px
+
+@media (max-width: 991px)
+    .nav-col
+        display: none
+
+    .doc-back
+        text-align: center !important
+
+    .doc-content
+        padding-left: 25px
+        padding-right: 25px
+        color: white !important
+
+//.show
+//    text-align: center
+
+//    display: flex !important
+//    position: fixed
+//    width: 100%
+//    z-index: 2000
+//    top: 0
+
+.video-item:hover
+    transform: scale(1.1, 1.2)
+
+.carousel-indicators li
+    background: $yellow !important
+
+.carousel-title
+    padding-right: 29px
+    text-align: right
+    position: relative
+    bottom: 57px
+    background: rgba(97, 97, 97, 0.7)
+    height: 50px
+    display: flex
+    align-items: center
+    width: 100%
+
+.carousel-content
+    padding-right: 29px
+    text-align: right
+    position: relative
+    bottom: 17px
+    background: rgba(97, 97, 97, 0.7)
+    //height: 50px
+    display: flex
+    align-items: center
+    width: 100%
+    border-right: 1px solid $yellow
+    padding-top: 16px
+    right: 30px
+
+button.navbar-toggler
+    height: 46px !important
+
+.carousel-title > p
+    margin: 0 !important
+
+.carousel-title > p::before
+    +circleBefore('', inline-block, 10px, 10px, 7.5px, $green, 8px)
+
+
+.about-tile
+    font-size: 1.5em
+    color: $dark-gray
+    position: relative
+
+
+.about-div
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+.establish-div
+    border-right: 1px solid $green
+    margin-top: 40px
+    color: $dark-gray
+
+.about-content
+    color: $dark-gray
+.establish-text
+    padding-right: 10px
+
+.establish-date
+padding-right: 10px
+color: $blue
+font-size: 2em
+.about-left
+background:red
+
+
+
+.address-parent
+    display: flex
+    margin-top: 50px
+
+.address-div
+    height: 40px
+    width: 40px
+    border: 1px solid $yellow
+    border-radius: 50px
+    display: flex
+    justify-content: center
+    align-items: center
+
+.address-btn
+    color: $green
+    font-size: 39px
+    margin-top: 6px
+
+.padding-r-8
+    padding-right: 8px
+
+.padding-top-8
+    padding-top: 8px
+
+.programs
+    background-color: #FDF3E9 !important
+    position: relative
+
+.program-main-title
+    font-size: 2em
+
+.programs .container
+    padding-top: 50px
+    padding-bottom: 50px
+
+/*# sourceMappingURL=style.css.map
+
+.doc-title
+    text-align: center
+    padding-top: 112px
+    font-size: 3.3em
+
+#programs
+    padding-top: 100px
+    padding-bottom: 100px
+
+.item2.wow
+    height: 360px
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: 47px
+    font-size: 13px
+
+.item > img
+    width: 50px
+    height: auto
+
+.about-tile.before::before
+    +smImage(url(/themes/default/img/after.png), relative, 14px)
+
+.program-title
+    padding-top: 21px
+    margin-top: 10px
+    padding-left: 10px
+    padding-right: 10px
+    color: $blue !important
+    position: relative
+    text-align: center !important
+
+.program-title::after
+    content: ""
+    width: 74px
+    border-bottom: solid 1px $yellow
+    display: inline-block
+    position: absolute
+    left: 36%
+    top: 44px
+
+/*border-bottom: 1px solid yellow;
+
+.program-main-title::before
+    +smImage(url(/themes/default/img/after.png), relative, 14px)
+
+.program-content
+    padding-left: 10px
+    padding-right: 10px
+
+.pro-main-div
+    display: flex
+    justify-content: center
+    align-items: center
+
+
+.news
+    margin-top: 100px
+
+.news-head-lg-title
+    font-size: 2em
+    position: relative
+    top: -58px
+
+    &::before
+        content: url(/themes/default/img/after.png)
+        position: relative
+        top: 14px
+
+.news-title
+    color: $blue
+    font-size: 1.5em
+
+    &::before
+        //circleBefore(content,display,width,height,border-radius,background-color,margin-left)
+        +circleBefore('', inline-block, 10px, 10px, 7.5px, $yellow, 8px)
+
+.share
+    padding-right: 8px
+
+#share-news > a
+    padding-right: 10px
+
+.member-col
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+.item2.wow.fadeIn.prog
+    background: white !important
+    border-top-left-radius: 52px
+    border-bottom-right-radius: 51px
+    box-shadow: 1px 0 13px #d0c2c2
+
+@media (max-width: 968px)
+    .side-box
+        //sideBox(position,height,left,top,z-index,width,border-size,border-color)
+        +sideBox(absolute, 200px, 0, -16%, 545, 94px, 1px, $green)
+
+    .prog-div1
+        display: block
+
+    .member-col
+        height: 400px !important
+
+    .prog-div2
+        display: none
+
+    #programs
+        padding-top: 30px
+        padding-bottom: 100px
+
+    .program-main-title
+        padding-bottom: 35px
+
+    .nav-icon
+        text-align: center
+        margin-bottom: 23px
+
+
+@media (min-width: 970px)
+    .side-box
+        //sideBox(position,height,left,top,z-index,width,border-size,border-color)
+        +sideBox(absolute, 506px, 0, 28%, 545, 94px, 1px, $green)
+
+    .prog-div1
+        display: none
+
+    .prog-div2
+        display: flex
+
+.news-head-sm-title
+    position: relative
+    margin-bottom: 65px
+
+    &::after
+        //smLine(content,border-size,border-color,display,position,left)
+        +smLine('', 72px, 1px, $green, inline-block, relative, -7px)
+
+p.news-readmore::before
+    //smLine(content,border-size,border-color,display,position,left)
+    +smLine('', 72px, 1px, $green, inline-block, relative, 8px)
+
+.doc-more
+    color: white !important
+
+p.doc-more::before
+    +smLine('', 72px, 1px, $blue, inline-block, relative, 8px)
+
+@media (max-width: 991px)
+    .nav-icon.first
+        display: none !important
+
+    .nav-sm
+        display: block !important
+
+    .news-container-lg
+        display: none
+
+    .news-container-sm
+        display: block
+
+    .news-head-lg-title1
+        padding-right: 31px
+        font-size: 2.5em
+
+        &::before
+            +circleBefore('', inline-block, 10px, 10px, 7.5px, $green, 8px)
+
+    .news-date1
+        padding-right: 27px
+        color: $dark-gray
+
+    .news-title1
+        font-family: $alf-font
+        padding-right: 27px
+
+        &::before
+            //circleBefore(content,display,width,height,border-radius,background-color,margin-left)
+            +circleBefore('', inline-block, 10px, 10px, 7.5px, $yellow, 8px)
+
+    @media (max-width: 346px)
+        //background: #616161
+        //// news(background-color, position, top, width, right,color, border-size,padding-top)
+        //+news(absolute, calc(100% - 37%), 84%, 8%, white, 2px, $yellow, 13px)
+
+    .news-content-div
+        background: #616161
+        /* news(background-color, position, top, width, right,color, border-size,padding-top) */
+        +news( absolute, calc(100% - 32%), 84%, 8%, white, 2px, $yellow, 13px)
+
+    .news-content1
+        padding-right: 10px
+        color: white !important
+
+    .news-all
+        position: relative
+        top: 82px
+        margin-right: 22px
+
+        &::after
+            //smLine(content,border-size,border-color,display,position,left)
+            +smLine('', 76px, 2px, $green, inline-block, relative, -11px)
+
+    .first-img-div
+        margin-bottom: 102px
+
+        > img
+            padding-right: unset !important
+            margin-bottom: 68px
+
+    .img-title::before
+        //circleBefore(content,display,width,height,border-radius,background-color,margin-left)
+        +circleBefore('', inline-block, 15px, 15px, 7.5px, $yellow, 8px)
+
+    .doc-container
+        height: 851px
+        background: $green
+
+    #doc-img
+        position: relative
+        top: 29px
+        width: 70%
+
+@media (min-width: 992px)
+    .news-container-sm
+        display: none
+
+    .news-container-lg
+        display: block
+
+    .news-head-lg-title::before
+        +smImage(url(/themes/default/img/after.png), relative, 7px)
+
+    .doc-container
+        background: $green
+        height: 500px
+
+    .doc-content
+        padding-left: 36px
+        margin-top: 127px
+        color: white !important
+
+    .doc-back
+        text-align: left
+    .nav-sm
+        display: none !important
+    #doc-img
+        position: relative
+        top: 91px
+        width: 70%
+    .rounded-circle
+        width: 180px
+        height: 180px
+
+    .person-image
+        border: 1px solid $blue
+        border-radius: 113px
+        height: 210px
+        width: 210px
+        display: flex
+        justify-content: center
+        align-items: center
+
+.video-layer
+    position: absolute
+    background-image: url("/themes/default/img/video.png")
+    top: 0
+    z-index: 665
+    height: 100%
+    width: 100%
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+//
+//.member-col
+//    height: 512px
+
+.doc-back
+    background-image: url("/themes/default/img/file.png")
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    background-position-x: 23px
+
+.img-title::before
+    //circleBefore(content,display,width,height,border-radius,background-color,margin-left)
+    +circleBefore('', inline-block, 15px, 15px, 7.5px, $yellow, 8px)
+
+.video-title
+    position: absolute
+    bottom: 32px
+    color: white
+    z-index: 55465
+    padding-right: 9px
+    border-right: 1px solid $yellow
+    right: 14px
+    font-family: $alf-font
+
+.video-title > p
+    position: relative
+    font-family: $alf-font
+    top: 21px
+
+.video-main::before
+    content: url(/themes/default/img/after.png)
+    position: relative
+//top: 14px
+
+
+.team-main-title::before
+    content: url(/themes/default/img/after.png)
+    position: relative
+
+.doc-main::before
+    content: url(/themes/default/img/after1.png)
+    position: relative
+
+
+.dropdown-toggle::after
+    display: inline-block
+    margin-right: .255em
+    vertical-align: .255em
+    content: ""
+    border-top: .3em solid $yellow !important
+    border-left: .3em solid transparent
+    border-bottom: 0
+    border-right: .3em solid transparent
+
+
+.hyber-link
+    color: #616161 !important
+
+.span.arabic-letter
+    color: $green !important
+
+
+//images
+@media (min-width: 992px)
+    .first-img
+        padding-right: 57px
+        position: relative
+        bottom: -93px
+
+    .about-desc
+        padding-right: 100px !important
+        padding-left: 100px !important
+
+    .third-imgage
+        padding-top: 33px
+        margin-bottom: 37px
+
+    .second-image
+        margin-top: 40px
+
+    .img-title
+        font-size: 3em
+        position: relative
+        top: 61px
+        right: 125px
+        color: white
+
+    #video-section
+        margin-top: 120px
+
+@media (max-width: 991px)
+    .first-img
+        position: relative
+        bottom: -69px
+        margin-bottom: 0
+
+    .about-desc
+        padding-right: 50px !important
+        padding-left: 50px !important
+
+
+    .third-imgage
+        padding-top: 33px
+        margin-bottom: 37px
+
+    //.second-image
+    //    margin-top: 40px
+
+    .img-title
+        font-size: 3em
+        position: relative
+        top: 61px
+        color: white
+    #video-section
+        margin-top: 50px
+    .rounded-circle
+        width: 150px
+        height: 150px
+
+    .person-image
+        border: 1px solid $blue
+        border-radius: 113px
+        height: 180px
+        width: 180px
+        display: flex
+        justify-content: center
+        align-items: center
+
+.person-name
+    color: $blue !important
+
+.person-name::before
+    +circleBefore('', inline-block, 10px, 10px, 7.5px, $green, 8px)
+
+.establish-date
+    color: $blue

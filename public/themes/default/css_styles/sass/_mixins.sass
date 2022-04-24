@@ -1,0 +1,68 @@
+/* Global Mixins*/
+@use "variables"
+//news content div *home.sass*
+=news($position,$top,$width,$right,$color,$border_size,$border_color,$padding_top)
+
+    position: $position
+    top: $top
+    width: $width
+    right: $right
+    color: $color
+    border-right: $border_size solid $border_color
+    padding-top: $padding_top
+
+
+    //circle before titles
+=circleBefore($content,$display,$width,$height,$border_radius,$background_color,$margin_left)
+    content: $content
+    display: $display
+    width: $width
+    height: $height
+    -moz-border-radius: $border_radius
+    -webkit-border-radius: $border_radius
+    border-radius: $border_radius
+    background-color: $background_color
+    margin-left: $margin_left
+
+    //small line before or after line
+=smLine($content,$width,$border_size,$border-color,$display,$position,$left)
+    content: $content
+    width: $width
+    border-bottom: solid $border_size $border-color
+    display: $display
+    position: $position
+    left: $left
+
+    //Home programs box
+=sideBox($position,$height,$left,$top,$z_index,$width,$border-size,$border-color)
+    position: $position
+    height: $height
+    left: $left
+    top: $top
+    z-index: $z_index
+    width: $width
+    border-top: $border-size solid $border-color
+    border-right: $border-size solid $border-color
+    border-bottom: $border-size solid $border-color
+
+//page title container
+=titleContainer()
+    background-image:  url('/themes/default/img/cover.svg')
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
+    height: 150px
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 2em
+    color: #248CC8
+
+//small image of three circles before element
+=smImage($content,$position,$top)
+    content: $content
+    position: $position
+    top: $top
+
+

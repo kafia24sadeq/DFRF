@@ -1,0 +1,14 @@
+{
+  "name": "muadshibani/phpar",
+  "description": "enclose php-ar library to be used by Laravel",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Muad",
+      "email": "muad.shibani@gmail.com"
+    }
+  ],
+  "minimum-stability": "beta",
+  "require": {}
+}
